@@ -1,0 +1,202 @@
+.main-section-box {
+    position: relative;
+    background-image: url('../../assets/images/bg.png');
+    width: 80%;
+    margin: 0 auto;
+    height: 674px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50px;
+}
+
+.cell-phone-box {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+}
+
+@media (max-width: 700px) {
+    .main-section-box {
+        width: 100%;
+    }
+
+    .cell-phone-box {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+/* category */
+
+.product-section-box {
+    width: 75%;
+    margin: 200px auto 0;
+}
+
+.carousel-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.carousel-title {
+    color: rgba(22, 22, 46, 1);
+    font-family: PangramBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.products-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    .products-box {
+        flex-direction: none;
+        flex-wrap: wrap;
+    }
+}
+
+/* Popular Products */
+
+.pps-section-box {
+    width: 75%;
+    margin: 100px auto 0;
+}
+
+.pps-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pps-title p {
+    font-family: PangramBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    color: #16162E;
+}
+
+.product-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+@media (max-width: 700px) {
+
+    .pps-title {
+        flex-direction: column;
+    }
+
+    .pps-title p {
+        margin-bottom: 15px;
+    }
+    .product-box {
+        flex-direction: column;
+    }
+
+    .product-box > * {
+        margin-bottom: 20px;
+    }
+}
+
+/* Download App */
+
+.prefooter-sectio-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 130px auto 0;
+    background: rgba(64, 170, 84, 0.15);
+    height: 532px;
+    border-radius: 45px;
+}
+
+.prefootet-section-container {
+    height: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prefooter-description {
+    /* width: 465px;
+    height: 180px;
+    margin-left: 240px; */
+    width: 40%;
+    height: 40%;
+    margin-left: 45%;
+}
+
+.prefooter-description p:first-child {
+    font-family: PangramCompactRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    color: #16162E;
+    margin-bottom: 20px;
+}
+
+
+
+.prefooter-description p:last-child {
+    font-family: PangramLight;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8B8B97;
+}
+
+.store-box {
+    margin-left: 45%;
+}
+
+.store-box img:first-child{
+    margin-right: 10px;
+}
+
+.cell-footer {
+    position: absolute;
+    left: -60px;
+    top: -125px;
+}
+
+@media (max-width: 700px) {
+    .prefooter-sectio-container {
+        width: 100%;
+    }
+
+    .cell-footer {
+       display: none;
+    }
+
+    .prefooter-description {
+        width: 80%;
+        height: 54%;
+        margin-left: 10%;
+    }
+
+    .store-box {
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+     
+}

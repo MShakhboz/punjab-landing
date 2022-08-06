@@ -1,0 +1,25 @@
+.box-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ECECEC;
+    border-radius: 23px;
+    width: 370px;
+    height: 320px;
+    background-color: #ffff;
+}
+
+.name-container {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;    
+}
+.name-container p {
+    font-family: PangramCompactRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #16162E;   
+}

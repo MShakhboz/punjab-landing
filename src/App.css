@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  
+  @font-face {
+    font-family: 'PangramCompactRegular';
+    src: local('Pangram'), url(./assets/fonts/PPPangramSansRounded-CompactRegular.otf) format('opentype');
   }
-  to {
-    transform: rotate(360deg);
+  
+  @font-face {
+      font-family: 'PangramBold';
+      src: local('Pangram'), url(./assets/fonts/PPPangramSansRounded-Bold.otf) format('opentype');
   }
-}
+  
+  @font-face {
+      font-family: 'PangramLight';
+      src: local('Pangram'), url(./assets/fonts/PPPangramSansRounded-Light.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'PangramMedium';
+    src: local('Pangram'), url(./assets/fonts/PPPangramSansRounded-Medium.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'PangramSemibold';
+    src: local('Pangram'), url(./assets/fonts/PPPangramSansRounded-Semibold.otf) format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'PangramThin';
+    src: local('Pangram'), url(./assets/fonts/PPPangramSansRounded-Thin.otf) format('opentype');
+  }
+  
+  .closeIcone{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .ReactModal__Overlay {
+   background-color: rgba(16, 2, 2, 0.4) !important;
+
+  }
+
+  .modal-content {
+    width: 1000px;
+  }
+
+  @media (max-width: 700px) {
+    .modal-content {
+      width: 380px;
+    }
+  
+  }
+
+  .ReactModal__Content {
+    position: static !important;
+    inset: 0 !important;
+    border: 0 !important;
+    background: none !important ;
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    outline: none;
+    padding: 0 !;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
