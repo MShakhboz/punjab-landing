@@ -27,7 +27,7 @@ const FooterComponent = () => {
                             <div className="footer-title">About</div>
                             <ul>
                                 <li>How it Work</li>
-                                <li>Our Packages</li>
+                                <li>Packaging</li>
                                 <li>Promotions</li>
                                 <li>Refer A Friend</li>
                             </ul>
@@ -35,18 +35,22 @@ const FooterComponent = () => {
                         <div className="footer-info-box">
                             <div className="footer-title">Delivery</div>
                             <ul>
-                                <li>Cost Of Delivery</li>
+                                <li>Delivery Information</li>
                                 <li>Payment Method</li>
                                 <li>Delivery Areas</li>
-                                <li>Returns</li>
+                                <li>Return Policy</li>
                             </ul>
                         </div>
                         <div className="footer-info-box">
                             <div className="footer-title">Contact</div>
                             <ul>
-                                <li>Custom, Chhatak 216/c East Road</li>
-                                <li>egrocery@gmail.com</li>
-                                <li>+8801710000000</li>
+                                <li>info@punjabstreet.co.uk</li>
+                                <li style={{ visibility: "hidden" }}>
+                                    egrocery@gmail.com
+                                </li>
+                                <li style={{ visibility: "hidden" }}>
+                                    +8801710000000
+                                </li>
                                 <li style={{ visibility: "hidden" }}>
                                     Telephone number
                                 </li>

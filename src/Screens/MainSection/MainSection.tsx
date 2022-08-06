@@ -37,7 +37,7 @@ const MainSection = () => {
                 <div className="product-section-box">
                     <div className="carousel-box">
                         <div className="carousel-box-title">
-                            <p className="carousel-title">Category</p>
+                            <p className="carousel-title">Categories</p>
                         </div>
                         <div className="carousel-box-arrows">
                             <img src={arrow} alt="Arrow" />
@@ -60,7 +60,7 @@ const MainSection = () => {
                 <div className="pps-section-box">
                     <div className="pps-section-container">
                         <div className="pps-title">
-                            <p>Popular Product</p>
+                            <p>Popular Products</p>
                             <img src={button} alt="button" />
                         </div>
                         <div className="product-box">
@@ -105,14 +105,6 @@ const MainSection = () => {
                             <div>
                                 <div className="prefooter-description">
                                     <p>Download App</p>
-                                    <p>
-                                        Cum sociis natoque penatibus et magnis
-                                        dis parturient monta dis et lkdekes,
-                                        Aenean massa.If you are going to use a
-                                        passage of Ipsum, you need to be sure
-                                        there isn't anything embarrassing hidden
-                                        in the middle to use.
-                                    </p>
                                 </div>
                                 <div className="store-box">
                                     <img

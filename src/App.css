@@ -34,39 +34,142 @@
     font-family: 'PangramThin';
     src: local('Pangram'), url(./assets/fonts/PPPangramSansRounded-Thin.otf) format('opentype');
   }
+
+  .modalBackground {
+    position: relative;
+    background-image: url("../src/assets/images/modal-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 1046px;
+    height: 705px;
+    margin: -7px;
+  }
   
   .closeIcone{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5%;
+    right: 5%;
   }
 
   .ReactModal__Overlay {
    background-color: rgba(16, 2, 2, 0.4) !important;
-
-  }
-
-  .modal-content {
-    width: 1000px;
-  }
-
-  @media (max-width: 700px) {
-    .modal-content {
-      width: 380px;
-    }
-  
   }
 
   .ReactModal__Content {
-    position: static !important;
-    inset: 0 !important;
-    border: 0 !important;
-    background: none !important ;
-    overflow: hidden !important;
-    border-radius: 0 !important;
-    outline: none;
-    padding: 0 !;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: static !important;
+    inset: 0 !important;
+    border: 0 !important;
+    background: #fff ;
+    overflow: hidden !important;
+    border-radius: 46px !important;
+    outline: none;
+    padding: 0 !important;
+    width: fit-content;
+    height: fit-content;   
+    margin-top: 8%;
+    margin-left: 19%;
+  }
+
+  .comingsoon-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #FFFFFF;
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+
+  .title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 12vw;
+    left: 8vw;
+    height: 18vw;
+  }
+
+  .title-box p:first-child {
+    font-family: PangramSemibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 56px;
+    color: #FFFFFF;
+  }
+
+  .title-box p:nth-child(2){
+    font-family: PangramMedium;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  .title-box ul {
+    margin-left: 10px;
+  }
+  .title-box ul li{
+    margin-top: 8px;
+    font-family: 'PangramCompactRegular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  
+  .cellPhoneBox {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+
+  .image-cellphone {
+    width: 30vw;
+  }
+
+  @media (max-width: 700px) {
+    .modalBackground {
+      width: 100vw;
+      height: 300px;
+      margin: 0;
+    }
+
+    .title-box p:first-child {
+      font-size: 25px;
+    }
+  
+    .title-box p:nth-child(2){
+      font-size: 15px;
+      
+    }
+    .ReactModal__Content {
+      margin-top: 20%;
+      margin-left: 0;
+    }
+
+    .title-box {
+      bottom: 40vw;
+    }
+
+    .title-box ul li{
+      margin-top: 0;
+      font-size: 10px;
+    }
+
+    .comingsoon-container {
+      background: #FFFFFF;
+    }
+    .comingSoon-image {
+      width: 70px;
+    }
+  
   }

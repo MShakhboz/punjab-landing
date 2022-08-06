@@ -7,7 +7,9 @@ import HeaderComponent from "./Components/Header";
 import MainSection from "./Screens/MainSection";
 import FooterComponent from "./Components/Footer";
 
-import modalImage from "../src/assets/images/modal.png";
+import comingSoon from "../src/assets/images/coming-soon.png";
+import cellPhones from "../src/assets/images/modal-cellphones.png";
+
 import "./App.css";
 
 const customStyles = {
@@ -35,23 +37,40 @@ function App() {
                 contentLabel="Example Modal"
                 shouldCloseOnOverlayClick={true}
             >
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                    }}
-                >
-                    <div style={{ position: "relative" }}>
-                        <img
-                            src={modalImage}
-                            alt="modal image"
-                            className="modal-content"
-                        />
-                    </div>
-
-                    <div className="closeIcone" onClick={closeModal}>
-                        <IoCloseOutline color="#fff" size={50} />
+                <div>
+                    <div className={"modalBackground"}>
+                        <div className="comingsoon-container">
+                            <div className="comingsoon-box">
+                                <div className="comingsoon-logo-box">
+                                    <img
+                                        src={comingSoon}
+                                        alt="coming soon modal"
+                                        className="comingSoon-image"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className={"title-box"}>
+                                <p>COMING SOON</p>
+                                <p>Online Grocery Service in the UK.</p>
+                                <ul>
+                                    <li>Fast Delivery</li>
+                                    <li>Great Selection</li>
+                                    <li>High Quality Products</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="closeIcone" onClick={closeModal}>
+                            <IoCloseOutline color="#000000" size={30} />
+                        </div>
+                        <div className="cellPhoneBox">
+                            <img
+                                src={cellPhones}
+                                alt="cell phone"
+                                className="image-cellphone"
+                            />
+                        </div>
                     </div>
                 </div>
             </Modal>
