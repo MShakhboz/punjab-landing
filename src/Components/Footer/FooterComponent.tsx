@@ -1,6 +1,4 @@
 import footerLogo from "../../assets/images/footer-logo.png";
-import appleLogo from "../../assets/images/apple-icon.png";
-import googleLogo from "../../assets/images/google-icon.png";
 import twitter from "../../assets/images/twitter-icon.png";
 import facebook from "../../assets/images/facebook-icon.png";
 
@@ -17,8 +15,6 @@ const FooterComponent = () => {
                                 <img src={footerLogo} alt="Footer Logo" />
                             </div>
                             <div className="social-box">
-                                <img src={appleLogo} alt="Apple Logo" />
-                                <img src={googleLogo} alt="Google Logo" />
                                 <img src={twitter} alt="twitter" />
                                 <img src={facebook} alt="facebook" />
                             </div>
