@@ -119,7 +119,11 @@ const MainSection = () => {
                             </div>
                         </div>
                         <div className="cell-footer">
-                            <img src={cellFooter} alt="cell phone" />
+                            <img
+                                src={cellFooter}
+                                alt="cell phone"
+                                className="mobile-dimension"
+                            />
                         </div>
                     </div>
                 </div>
