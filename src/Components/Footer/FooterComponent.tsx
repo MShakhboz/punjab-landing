@@ -22,7 +22,7 @@ const FooterComponent = () => {
                         <div className="footer-info-box">
                             <div className="footer-title">About</div>
                             <ul>
-                                <li>How it Work</li>
+                                <li>How it Works</li>
                                 <li>Packaging</li>
                                 <li>Promotions</li>
                                 <li>Refer A Friend</li>
@@ -32,7 +32,7 @@ const FooterComponent = () => {
                             <div className="footer-title">Delivery</div>
                             <ul>
                                 <li>Delivery Information</li>
-                                <li>Payment Method</li>
+                                <li>Payment Methods</li>
                                 <li>Delivery Areas</li>
                                 <li>Return Policy</li>
                             </ul>
